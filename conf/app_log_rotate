@@ -1,0 +1,15 @@
+/data/web/_SAMPLE_/logs/*log {
+        daily
+        rotate 60
+        missingok
+        notifempty
+        compress
+        sharedscripts
+        create 644
+        delaycompress
+        postrotate
+                echo `date` > /data/web/_SAMPLE_/logs/rotate.txt || true
+                /sbin/service httpd reload > /dev/null 2>/dev/null || true
+        endscript
+}
+
