@@ -6,7 +6,7 @@ if [[ $1 = "" ]]; then
 fi
 
 WEB_PATH=/data/web
-WEB_SIZE=5G
+WEB_SIZE=2G
 NEW_SITE=$1
 
 echo "Creating base directory for $NEW_SITE"
