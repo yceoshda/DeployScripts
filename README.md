@@ -1,0 +1,1 @@
+Just a small shell script to automatically create a web site using apache virtual hosts and php-fpm pools.
